@@ -106,7 +106,7 @@ $_pc-sprite-ps: (hover active disabled);
         }
         @if((index($_pc-sprite-ps, $str) != null) and ($lastindex != -1)){
             $class: str-slice($sprite-name ,1 ,$lastindex);
-            .#{$class}:#{$str}{
+            .#{$class}:#{$str},.#{$class}.#{$str}{
                 @include pc-sprite($sprite-dir ,$sprite-name ,false);
             }
         }
