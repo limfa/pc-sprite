@@ -14,9 +14,9 @@ $_pc-sprite-ps: (hover active disabled);
 @function _pc-sprite-get-map($sprite-dir){
     @return sprite-map(
         "#{$sprite-dir}/*.png"
-        ,$layout: vertical
+        ,$layout: smart
         // ,$sort-by: "width"
-        ,$spacing: 1px
+        // ,$spacing: 1px
     );
 }
 /**
