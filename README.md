@@ -32,7 +32,7 @@ $icon-dir2: 'event/thanksgiving/fr/icon';
 
 .one{
     // 输出单张
-    @include pc-sprite($icon-dir1 ,'one');
+    @include pc-sprite($icon-dir1 ,'one' ,$extend:'%icon-sprite1');
     width: pc-sprite-width($icon-dir1 ,'one');
     height: pc-sprite-height($icon-dir1 ,'one');
 }
